@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/dad8a5aed6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+
+    <link rel="stylesheet" href="burger.css" />
+    <script src="burger.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let typed = new Typed(".typing", {
+          strings: ["Issam's Burger"],
+          typeSpeed: 100,
+          backSpeed: 60,
+          loop: true,
+        });
+        // FastClick.attach(document.body);
+        // $('#fullpage').fullpage();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#burger_color_img3").click(function () {
+          $("#after").css("background-color", "pink");
+          $("#img_intro").attr("src", "fast-food.png");
+        });
+        $("#burger_color_img2").click(function () {
+          $("#after").css("background-color", "#d9707e");
+          $("#img_intro").attr("src", "beer.png");
+        });
+        $("#burger_color_img1").click(function () {
+          $("#after").css("background-color", "green");
+          $("#img_intro").attr("src", "veggie.png");
+        });
+        $("#burger_color_img4").click(function () {
+          $("#after").css("background-color", "#de924b");
+          $("#img_intro").attr("src", "hamburger.png");
+        });
+        $("#what_a_burger_can_do_for_you").mouseenter(function () {
+          $("#eat_burger").css("transform", "scale(1.1)");
+        });
+        $("#what_a_burger_can_do_for_you").mouseleave(function () {
+          $("#eat_burger").css("transform", "scale(1)");
+        });
+        // ________________burger_menu_hover________________
+
+        // green_burger________________
+        // $("#img_burger_menu").mouseenter(function () {
+        //   $(".burger_discr_green").css("overflow", "visible");
+        //   $(".burger_discr_green").css("width", "fit-content");
+        //   $("#green_burger").css("width", "300px");
+        //   $("#green_burger").css("height", "200px");
+        //   $("#green_burger").css("border-radius", "0px");
+        // });
+        // $("#img_burger_menu").mouseleave(function () {
+        //   $(".burger_discr_green").css("overflow", "hidden");
+        //   $(".burger_discr_green").css("width", "0px");
+        //   $("#green_burger").css("width", "100px");
+        //   $("#green_burger").css("height", "50px");
+        //   $("#green_burger").css("border-radius", "50%");
+        // });
+        // $(".burger_discr").mouseenter(function () {
+        //   $(".burger_discr_green").css("overflow", "visible");
+        //   $(".burger_discr_green").css("width", "fit-content");
+        //   $("#green_burger").css("width", "300px");
+        //   $("#green_burger").css("height", "200px");
+        //   $("#green_burger").css("border-radius", "0px");
+        // });
+        // $(".burger_discr").mouseleave(function () {
+        //   $(".burger_discr_green").css("overflow", "hidden");
+        //   $(".burger_discr_green").css("width", "0px");
+        //   $("#green_burger").css("width", "100px");
+        //   $("#green_burger").css("height", "50px");
+        //   $("#green_burger").css("border-radius", "50%");
+        // });
+        // $("#green_burger").mouseenter(function () {
+        //   $(".burger_discr_green").css("overflow", "visible");
+        //   $(".burger_discr_green").css("width", "fit-content");
+        //   $("#green_burger").css("width", "300px");
+        //   $("#green_burger").css("height", "200px");
+        //   $("#green_burger").css("border-radius", "0px");
+        // });
+        // $("#green_burger").mouseleave(function () {
+        //   $(".burger_discr_green").css("overflow", "hidden");
+        //   $(".burger_discr_green").css("width", "0px");
+        //   $("#green_burger").css("width", "100px");
+        //   $("#green_burger").css("height", "50px");
+        //   $("#green_burger").css("border-radius", "50%");
+        // });
+        $(".burger_menu_container_1").mouseenter(function () {
+          $(".burger_discr_green").css("overflow", "visible");
+          $(".burger_discr_green").css("width", "fit-content");
+          $("#green_burger").css("width", "300px");
+          $("#green_burger").css("height", "200px");
+          $("#green_burger").css("border-radius", "0px");
+        });
+        $(".burger_menu_container_1").mouseleave(function () {
+          $(".burger_discr_green").css("overflow", "hidden");
+          $(".burger_discr_green").css("width", "0px");
+          $("#green_burger").css("width", "100px");
+          $("#green_burger").css("height", "50px");
+          $("#green_burger").css("border-radius", "50%");
+        });
+        // burger_and_juice___________________
+        // $("#img_burger_menu_juice").mouseenter(function () {
+        //   $(".burger_discr_juice").css("overflow", "visible");
+        //   $(".burger_discr_juice").css("width", "fit-content");
+        //   $("#burgerjuice").css("width", "300px");
+        //   $("#burgerjuice").css("height", "200px");
+        //   $("#burgerjuice").css("border-radius", "0px");
+        // });
+        // $("#img_burger_menu_juice").mouseleave(function () {
+        //   $(".burger_discr_juice").css("overflow", "hidden");
+        //   $(".burger_discr_juice").css("width", "0px");
+        //   $("#burgerjuice").css("width", "100px");
+        //   $("#burgerjuice").css("height", "50px");
+        //   $("#burgerjuice").css("border-radius", "50%");
+        // });
+        // $(".burger_discr_juice").mouseenter(function () {
+        //   $(".burger_discr_juice").css("overflow", "visible");
+        //   $(".burger_discr_juice").css("width", "fit-content");
+        //   $("#burgerjuice").css("width", "300px");
+        //   $("#burgerjuice").css("height", "200px");
+        //   $("#burgerjuice").css("border-radius", "0px");
+        // });
+        // $(".burger_discr_juice").mouseleave(function () {
+        //   $(".burger_discr_juice").css("overflow", "hidden");
+        //   $(".burger_discr_juice").css("width", "0px");
+        //   $("#burgerjuice").css("width", "100px");
+        //   $("#burgerjuice").css("height", "50px");
+        //   $("#burgerjuice").css("border-radius", "50%");
+        // });
+        // $("#burgerjuice").mouseenter(function () {
+        //   $(".burger_discr_juice").css("overflow", "visible");
+        //   $(".burger_discr_juice").css("width", "fit-content");
+        //   $("#burgerjuice").css("width", "300px");
+        //   $("#burgerjuice").css("height", "200px");
+        //   $("#burgerjuice").css("border-radius", "0px");
+        // });
+        // $("#burgerjuice").mouseleave(function () {
+        //   $(".burger_discr_juice").css("overflow", "hidden");
+        //   $(".burger_discr_juice").css("width", "0px");
+        //   $("#burgerjuice").css("width", "100px");
+        //   $("#burgerjuice").css("height", "50px");
+        //   $("#burgerjuice").css("border-radius", "50%");
+        // });
+        $(".burger_menu_container_2").mouseenter(function () {
+          $(".burger_discr_juice").css("overflow", "visible");
+          $(".burger_discr_juice").css("width", "fit-content");
+          $("#burgerjuice").css("width", "300px");
+          $("#burgerjuice").css("height", "200px");
+          $("#burgerjuice").css("border-radius", "0px");
+        });
+        $(".burger_menu_container_2").mouseleave(function () {
+          $(".burger_discr_juice").css("overflow", "hidden");
+          $(".burger_discr_juice").css("width", "0px");
+          $("#burgerjuice").css("width", "100px");
+          $("#burgerjuice").css("height", "50px");
+          $("#burgerjuice").css("border-radius", "50%");
+        });
+        // Normal_Burger___________________
+        // $("#img_burger_menu_normal").mouseenter(function () {
+        //   $(".burger_discr_normal").css("overflow", "visible");
+        //   $(".burger_discr_normal").css("width", "fit-content");
+        //   $("#normal_burger").css("width", "300px");
+        //   $("#normal_burger").css("height", "200px");
+        //   $("#normal_burger").css("border-radius", "0px");
+        // });
+        // $("#img_burger_menu_normal").mouseleave(function () {
+        //   $(".burger_discr_normal").css("overflow", "hidden");
+        //   $(".burger_discr_normal").css("width", "0px");
+        //   $("#normal_burger").css("width", "100px");
+        //   $("#normal_burger").css("height", "50px");
+        //   $("#normal_burger").css("border-radius", "50%");
+        // });
+        // $(".burger_discr_normal").mouseenter(function () {
+        //   $(".burger_discr_normal").css("overflow", "visible");
+        //   $(".burger_discr_normal").css("width", "fit-content");
+        //   $("#normal_burger").css("width", "300px");
+        //   $("#normal_burger").css("height", "200px");
+        //   $("#normal_burger").css("border-radius", "0px");
+        // });
+        // $(".burger_discr_normal").mouseleave(function () {
+        //   $(".burger_discr_normal").css("overflow", "hidden");
+        //   $(".burger_discr_normal").css("width", "0px");
+        //   $("#normal_burger").css("width", "100px");
+        //   $("#normal_burger").css("height", "50px");
+        //   $("#normal_burger").css("border-radius", "50%");
+        // });
+        // $("#normal_burger").mouseenter(function () {
+        //   $(".burger_discr_normal").css("overflow", "visible");
+        //   $(".burger_discr_normal").css("width", "fit-content");
+        //   $("#normal_burger").css("width", "300px");
+        //   $("#normal_burger").css("height", "200px");
+        //   $("#normal_burger").css("border-radius", "0px");
+        // });
+        // $("#normal_burger").mouseleave(function () {
+        //   $(".burger_discr_normal").css("overflow", "hidden");
+        //   $(".burger_discr_normal").css("width", "0px");
+        //   $("#normal_burger").css("width", "100px");
+        //   $("#normal_burger").css("height", "50px");
+        //   $("#normal_burger").css("border-radius", "50%");
+        // });
+        $(".burger_menu_container_3").mouseenter(function () {
+          $(".burger_discr_normal").css("overflow", "visible");
+          $(".burger_discr_normal").css("width", "fit-content");
+          $("#normal_burger").css("width", "300px");
+          $("#normal_burger").css("height", "200px");
+          $("#normal_burger").css("border-radius", "0px");
+        });
+        $(".burger_menu_container_3").mouseleave(function () {
+          $(".burger_discr_normal").css("overflow", "hidden");
+          $(".burger_discr_normal").css("width", "0px");
+          $("#normal_burger").css("width", "100px");
+          $("#normal_burger").css("height", "50px");
+          $("#normal_burger").css("border-radius", "50%");
+        });
+
+        // ___________________________monad________________
+        $(".burger_menu_container_4").mouseenter(function () {
+          $(".burger_discr_monad").css("overflow", "visible");
+          $(".burger_discr_monad").css("width", "fit-content");
+          $("#burger_monad").css("width", "300px");
+          $("#burger_monad").css("height", "200px");
+          $("#burger_monad").css("border-radius", "0px");
+        });
+        $(".burger_menu_container_4").mouseleave(function () {
+          $(".burger_discr_monad").css("overflow", "hidden");
+          $(".burger_discr_monad").css("width", "0px");
+          $("#burger_monad").css("width", "100px");
+          $("#burger_monad").css("height", "50px");
+          $("#burger_monad").css("border-radius", "50%");
+        });
+        // ________________team_seection_______________
+        $(".team_picture1").mouseenter(function () {
+          $(".picture_and_disc1").css("background-color", "#de924b");
+          $(".picture_and_disc1").css("color", "white");
+          $(".bottom_barre1").css("background-color", "#de924b");
+          $(this).css("transform", "scale(1.1)");
+        });
+        $(".team_picture1").mouseleave(function () {
+          $(".picture_and_disc1").css("background-color", "transparent");
+          $(".picture_and_disc1").css("color", "#de924b");
+          $(".bottom_barre1").css("background-color", "transparent");
+
+          $(this).css("transform", "scale(1)");
+        });
+        $(".team_picture2").mouseenter(function () {
+          $(".picture_and_disc2").css("background-color", "#de924b");
+          $(".bottom_barre2").css("background-color", "#de924b");
+          $(".picture_and_disc2").css("color", "white");
+          $(".bottom_barre2").css("color", "white");
+          $(this).css("transform", "scale(1.1)");
+        });
+        $(".team_picture2").mouseleave(function () {
+          $(".picture_and_disc2").css("background-color", "transparent");
+          $(".picture_and_disc2").css("color", "#de924b");
+          $(".bottom_barre2").css("background-color", "transparent");
+          $(this).css("transform", "scale(1)");
+        });
+        $(".team_picture3").mouseenter(function () {
+          $(".picture_and_disc3").css("background-color", "#de924b");
+          $(".bottom_barre3").css("background-color", "#de924b");
+          $(".picture_and_disc3").css("color", "white");
+          $(this).css("transform", "scale(1.1)");
+        });
+        $(".team_picture3").mouseleave(function () {
+          $(".picture_and_disc3").css("background-color", "transparent");
+          $(".bottom_barre3").css("background-color", "transparent");
+          $(".picture_and_disc3").css("color", "#de924b");
+          $(this).css("transform", "scale(1)");
+        });
+        $("#light").click(function () {
+          $("link").attr("href", "burger_light.css");
+        });
+        $("#dark").click(function () {
+          $("link").attr("href", "burger.css");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" class="chekh" />
+      <label for="check" class="checkbtn" class="chekh">
+        <i id="bares" class="fas fa-bars" class="chekh"></i>
+      </label>
+      <div id="div_logo">
+        <img src="hamburger.png" alt="burger logo" id="logo" />
+      </div>
+      <div id="nav_links">
+        <ul id="ul_navlinks">
+          <li><img id="light" src="/brightness.png" alt="" /></li>
+          <li><a class="avtive" href="">Menu</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">What's New</a></li>
+          <li><a href="">What's New</a></li>
+          <li><img id="dark" src="/dark2.png" alt="" /></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="home_section">
+        <div id="after"></div>
+        <div id="intro_sentence">
+          <div>
+            It's not just a Burger <br />
+            It's <span class="typing"></span><br />
+            <a href="">Sign Up</a>
+          </div>
+        </div>
+        <div id="intro_img">
+          <img src="/burger.png" alt="burger" title="burger" id="img_intro" />
+        </div>
+        <div id="burger_color">
+          <img id="burger_color_img1" src="veggie.png" alt="" />
+          <img id="burger_color_img2" src="beer.png" alt="" />
+          <img id="burger_color_img3" src="fast-food.png" alt="" />
+          <img id="burger_color_img4" src="hamburger.png" alt="" />
+        </div>
+      </section>
+      <section id="burger_section">
+        <div>
+          <div id="burger_retation">
+            __________<img src="/burger33.png" alt="" id="burger33" />__________
+          </div>
+          <div id="burger_section_container">
+            <div id="eating_burger_img">
+              <img src="food.png" alt="" id="eat_burger" />
+            </div>
+            <div id="what_a_burger_can_do_for_you">
+              <span> A Big Burger Can Complete Your Day </span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Itaque minima nemo ea quos ipsa iure blanditiis fugiat! Quaerat
+                amet excepturi cum officiis, <br />
+                laboriosam corporis praesentium illum nisi eligendi molestias
+                voluptatum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="menu_section">
+        <div id="menu_img">
+          <span>Best Burger<img src="menu.png" alt="" />Issam's Burger</span>
+        </div>
+        <div id="menu_container">
+          <!-- _______________________________________
+            _______________________________________ -->
+          <div class="burger_menu_container_1">
+            <div id="green_burger">
+              <div class="burger_discr_green">
+                <h3>Green Burger</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur assumenda possimus repellendus, laboriosam quo
+                  iusto
+                </p>
+                <a href="">Buy Now</a>
+              </div>
+              <div id="img_burger_menu_green">
+                <img src="veggie.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- _______________________________________
+            _______________________________________ -->
+          <div class="burger_menu_container_2">
+            <div id="burgerjuice">
+              <div class="burger_discr_juice">
+                <h3>Burger And Juice</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur assumenda possimus repellendus, laboriosam quo
+                  iusto
+                </p>
+                <a href="">Buy Now</a>
+              </div>
+              <div id="img_burger_menu_juice">
+                <img src="fast-food.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- _______________________________________
+            _______________________________________ -->
+          <div class="burger_menu_container_3">
+            <div id="normal_burger">
+              <div class="burger_discr_normal">
+                <h3>Normal Burger</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur assumenda possimus repellendus, laboriosam quo
+                  iusto
+                </p>
+                <a href="">Buy Now</a>
+              </div>
+              <div id="img_burger_menu_normal">
+                <img src="hamburger.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- !-- _______________________________________
+          _______________________________________ -->
+
+          <div class="burger_menu_container_4">
+            <div id="burger_monad">
+              <div class="burger_discr_monad">
+                <h3>Burger And Soda</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur assumenda possimus repellendus, laboriosam quo
+                  iusto
+                </p>
+                <a href="">Buy Now</a>
+              </div>
+              <div id="img_burger_menu_monad">
+                <img src="beer.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team_section">
+        <div id="team_logo">
+          <span>Best<img src="motivation.png" alt="" />team</span>
+        </div>
+        <div id="team_section_container">
+          <div id="member_1">
+            <div class="picture_and_disc1">
+              <img
+                class="team_picture1"
+                src="WhatsApp Image 2021-10-27 at 19.31.00.jpeg"
+                alt=""
+              />
+              <p>Issam Laafar</p>
+            </div>
+            <div class="bottom_barre1"></div>
+          </div>
+          <div id="member_1">
+            <div class="picture_and_disc2">
+              <img
+                class="team_picture2"
+                src="WhatsApp Image 2021-10-27 at 19.31.00.jpeg"
+                alt=""
+              />
+              <p>Issam Laafar</p>
+            </div>
+            <div class="bottom_barre2"></div>
+          </div>
+          <div id="member_1">
+            <div class="picture_and_disc3">
+              <img
+                class="team_picture3"
+                src="WhatsApp Image 2021-10-27 at 19.31.00.jpeg"
+                alt=""
+              />
+              <p>Issam Laafar</p>
+            </div>
+            <div class="bottom_barre3"></div>
+          </div>
+        </div>
+      </section>
+      <section id="contact_section">
+        <div id="contact_logo">
+          <img src="/sound-wave.png" alt="" />
+          <img src="/operator.png" alt="" />
+          <img id="wave_sound_2" src="/sound-wave.png" alt="" />
+        </div>
+        <div id="contact_container">
+          <div id="contact_img">
+            <img src="./contact.png" alt="" />
+          </div>
+          <div id="contact_form">
+            <form action="https://formspree.io/f/mrgjvndz" method="POST">
+              <span id="spanname"></span><br /><input
+                pattern="^[a-zA-z][^0-9]{4,}$"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <span id="spanemail"></span><br /><input
+                pattern="^[a-zA-z]{4,10}[0-9]{1,4}@gmail.(com|net)$"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <span id="spanphone"></span><br /><input
+                pattern="^06[0-9]{8}$"
+                id="phone"
+                id="phone"
+                type="text"
+                name="phone"
+                placeholder="Your phone Number"
+                required
+              />
+              <span id="spanmessage"></span><br /><textarea
+                id="message"
+                name="message"
+                id=""
+                rows="6"
+                placeholder="Your Message"
+                required
+                pattern="[0-9a-zA-Z]{5,}/ig"
+              ></textarea>
+              <!-- <button class="dwnld-cv" id="submit" type="submit" disabled >Send Message</button> -->
+              <input
+                type="submit"
+                value="Send Message"
+                id="submit"
+                class="dwnld-cv"
+              />
+              <input type="reset" value="reset" class="dwnld-cv"" >
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="footer_section">
+        <div>
+          <img
+            src="https://horizon2050.org/wp-content/uploads/2020/10/POI.gif"
+            alt="This is an animated gif image, but it does not move"
+          />
+          <h4>location</h4>
+          <p>ait ourir</p>
+        </div>
+        <div>
+          <img
+            src="https://designmodo.com/wp-content/uploads/2015/09/mail_icon.gif"
+            alt="This is an animated gif image, but it does not move"
+          />
+          <h4>email</h4>
+          <p>issam_burger@gmail.com</p>
+        </div>
+        <div>
+          <img
+            src="https://www.gif-maniac.com/gifs/49/49317.gif"
+            alt="This is an animated gif image, but it does not move"
+          />
+          <h4>phone number</h4>
+          <p>0600000000</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn.dribbble.com/users/764877/screenshots/10198005/media/421481305d29f3023efa121dcacee76e.gif"
+            alt="This is an animated gif image, but it does not move"
+          />
+          <h4>opening hours</h4>
+          <p>07:00am to 09:00pm</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
